@@ -581,8 +581,6 @@ def main():
         if "train" not in tokenized_datasets:
             raise ValueError("--do_train requires a train dataset")
         train_dataset = lm_datasets["train"]
-        # if data_args.data_save_dir is not None:
-        #     train_dataset.save_to_disk(data_args.data_save_dir, max_shard_size="1GB")
         if data_args.max_train_samples is not None:
             max_train_samples = min(len(train_dataset), data_args.max_train_samples)
             train_dataset = train_dataset.select(range(max_train_samples))

@@ -17,10 +17,10 @@ model_name_or_path=ziqingyang/chinese-alpaca-2-7b
 tokenizer_name_or_path=${proj_root}/llama2/tokenizer
 
 # training
-lr=1e-4
+lr=2e-4
 block_size=512
 seed=1234
-save_steps=100000 
+save_steps=2000 
 max_train_samples=20000000
 
 # data
