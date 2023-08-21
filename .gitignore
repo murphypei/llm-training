@@ -1,3 +1,10 @@
 __pycache__
 output
 wandb
+
+# evaluation files
+evaluation/mmlu_test
+lm_cache
+ceval_result
+mmlu_result
+harness_eval_result
